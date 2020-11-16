@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let bcc;
+    let k = 2;
+    let l = 1;
+
+    bcc = "<table border='1' style='margin: auto'>";
+
+    for (let i = 0; i < 9; i++){
+        bcc += "<tr>";
+        for (let j = 1; j < 9; j++){
+            bcc += "<td>" + k + "*" + l + "=" + (k*l) + "</td>";
+            k++;
+        }
+        k = 2;
+        l++;
+        bcc += "</tr>";
+    }
+    bcc+= "</table>";
+    document.write(bcc);
+
+</script>
+</body>
+</html>
